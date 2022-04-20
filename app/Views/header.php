@@ -55,7 +55,4 @@
             </div>
         </nav>
     </header>
-
-    
-</body>
-</html>
+    <main>

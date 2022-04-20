@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Footer</title>
-</head>
-<body>
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
@@ -33,5 +22,6 @@
             <small>&copy; 2021 <b>MUNDO LIBRO</b> - Todos los derechos reservados</small>
         </div>
     </footer>
+    </main>
 </body>
 </html>
