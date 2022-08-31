@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'https://localhost/codeigniter4/';
+    public $baseURL = 'https://localhost/LucianoValenzuela_P2/';
 
     /**
      * --------------------------------------------------------------------------
@@ -36,7 +36,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $indexPage = 'index.php';
+    public $indexPage = '';
 
     /**
      * --------------------------------------------------------------------------
