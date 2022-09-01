@@ -1,13 +1,15 @@
 <main class="container-fluid">
-    <div class="row aboutPage py-3 justify-content-start">
+    <div class="row nosotrosPage py-3 justify-content-start">
         <div class="col pageTitleSection pb-3">
             <h3 class="h3 color-azul fw-bold d-none d-md-block">Quiénes Somos</h3>
         </div>
         <div class="col totalContent rounded">
             <div class="row row-cols-1 row-cols-lg-2 section-items py-3">
-                <div class="col">
-                    <h2 class="text-section color-azul">Tu nueva</h2>
-                    <h2 class="text-section color-naranja">Librería online</h2>
+                <div class="col text-center">
+                    <div class="pt-5">
+                        <h2 class="text-section color-azul">Tu nueva</h2>
+                        <h2 class="text-section color-naranja">Librería online</h2>
+                    </div>
                     <p class="detailsParagraph color-azul my-4 text-justify">
                     <b>¡Somos Mundo libro!</b> Un lugar en el que no sólo vas a encontrar <b>el libro que buscás</b>, sino también descubrir 
                     <b>nuevos títulos</b> de tu interés, en un <b>entorno distinto, cálido y cultural.</b>

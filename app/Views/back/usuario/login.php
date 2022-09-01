@@ -6,7 +6,7 @@
     </div>
 <?php } ?>
 <main class="container-fluid">
-  <div class="container aboutPage">
+  <div class="container loginPage">
     <div class="container-fluid">
         <div class="row rounded d-flex justify-content-center">
           <div class="col-lg-5 form-login bg-body rounded shadow-lg border-0 rounded card mt-5">

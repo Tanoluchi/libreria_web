@@ -40,7 +40,6 @@
                                     <td>$<?php echo number_format($precio, 2, '.', ',');?></td>
                                     <td>
                                         <input type="number" min="1" max="<?php echo $stock;?>" step="1" value="<?php echo $cantidad;?>" size="5" id="cantidad_<?php echo $id; ?>" onchange="actualizarCantidad(this.value, <?php echo $id;?>)">
-                                        
                                     </td>
                                     <td>
                                         <div id="subtotal_<?php echo $id;?>" name="subtotal[]">$<?php echo number_format($subtotal, 2, '.', ','); ?></div>

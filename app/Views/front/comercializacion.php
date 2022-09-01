@@ -1,5 +1,5 @@
 <main class="container-fluid">
-    <div class="container-fluid aboutPage py-4 justify-content-start">
+    <div class="container-fluid comerPage py-4 justify-content-start">
         <div class="pageTitleSection pb-3">
             <h3 class="h3 color-azul fw-bold">Comercialización</h3>
         </div>
@@ -36,7 +36,7 @@
                         <div class="accordion-body">
                             <img src="public/assets/img/logoOCA.png" alt="Logo de correo OCA" width="320px" height="260px">
                             <img src="public/assets/img/logoCORREOARGENTINO.jpg" alt="Logo de correo Argentino" width="320px" height="260px">
-                            <img src="public/assets/img/envio_express.png" alt="" width="320px" height="260px">
+                            <img  src="public/assets/img/envio_express.png" alt="" width="320px" height="260px">
                             <ul class="my-3">
                                 <li class="h6 fw-bold">Correo OCA</li>
                                 <p class="color-azul">Se realiza el envio mediante el correo OCA.</p>
@@ -56,8 +56,9 @@
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <img src="public/assets/img/tarjetas.png" alt="" width="620px" height="260px">
-                            <img src="public/assets/img/mercado_pago.png" alt="" width="420px" height="260px">
+                            <img src="public/assets/img/visa.jpg" alt="" width="320px" height="260px">
+                            <img src="public/assets/img/Master-Card-Vector-Logo.jpg" alt="" width="320px" height="260px">
+                            <img src="public/assets/img/mercado_pago.png" alt="" width="320px" height="260px">
                             <ul>
                                 <li class="h6 fw-bold">Tarjetas de crédito y débito</li> 
                                 <a class="color-azul text-decoration-none" href="#">Se aceptan todas las tarjetas de crédito y débito</a>

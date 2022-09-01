@@ -1,5 +1,5 @@
 <main class="container-fluid">
-    <div class="container-fluid aboutPage py-4 justify-content-start">
+    <div class="container-fluid termPage py-4 justify-content-start">
     <div class="pageTitleSection pb-3">
             <h3 class="h3 color-azul fw-bold">Términos y condiciones</h3>
         </div>

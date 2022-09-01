@@ -476,5 +476,3 @@ composer.lock
 ## WRITABLE
 # Writable directories
 writable/*
-
-public/
