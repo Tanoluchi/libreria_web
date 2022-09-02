@@ -1,5 +1,17 @@
 <?php $validation = \Config\Services::validation(); ?>
 
+<?php if(session('success')){ ?>
+    <div class="container-fluid alert alert-success d-flex justify-content-center align-content-center" role="alert">
+        <?php echo session('success'); ?>
+    </div>
+<?php } ?>
+
+<?php if(session('error')){ ?>
+    <div class="container-fluid alert alert-danger d-flex justify-content-center align-content-center" role="alert">
+        <?php echo session('error'); ?>
+    </div>
+<?php } ?>
+
 <main class="container-fluid contactPage py-4 justify-content-start">
         <div class="pageTitleSection pb-3">
             <h3 class="h3 color-azul fw-bold">Información de contacto</h3>

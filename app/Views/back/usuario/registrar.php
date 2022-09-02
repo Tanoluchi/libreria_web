@@ -11,8 +11,8 @@
         <div class="pageTitleSection pb-2">
             <h3 class="h3 color-azul fw-bold">Crear Cuenta</h3>
         </div>
-      <div class="container-fluid shadow-lg rounded bg-white">
-        <div class="row row-cols-1 row-cols-lg-2 bg-white rounded py-4 d-flex justify-content-center align-content-center">
+      <div class="container-fluid ">
+        <div class="row row-cols-1 row-cols-lg-2 py-4 d-flex justify-content-center align-content-center">
           <div class="form-register bg-body rounded shadow-lg rounded">
           <h5 class="h5 fw-bold color-azul py-3">Información personal</h5>
             <form method="post" action="<?php echo base_url('usuarios/guardar') ?>" class="g-3 needs-validation" novalidate>

@@ -60,13 +60,15 @@ class Consultas extends BaseController{
                 'mensaje' => $this->request->getPost('mensaje'),
             ]);  
 
+            $session = session();
+            $session->setFlashdata('success','Se ha enviado el mensaje correctamente.');
+
             return redirect()->to(site_url('consulta/'));
         }else {
-            $data['titulo'] = 'Consultas';
-            
-            echo view('front/header', $data);
-            echo view('back/consulta/consulta');
-            echo view('front/footer');
+            $session = session();
+            $session->setFlashdata('error','Revise la informacion ingresada');
+
+            return redirect()->back()->withInput();
         }
     }
 

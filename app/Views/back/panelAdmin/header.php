@@ -57,6 +57,10 @@ $id = $user_session->id_usuario;
                                 <div class="sb-nav-link-icon"><i class="fa-brands fa-shopify"></i></div>
                                 Productos
                             </a>
+                            <a class="nav-link" href="<?php echo base_url('panelAdmin/categoria/listar');?>">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-pen"></i></div>
+                                Categorias
+                            </a>
                             <a class="nav-link" href="<?php echo base_url('panelAdmin/contacto/listar');?>">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-envelope"></i></div>
                                 Contactos

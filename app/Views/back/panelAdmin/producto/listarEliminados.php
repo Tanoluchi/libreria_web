@@ -1,5 +1,10 @@
 <div id="layourSidenav_content">
     <main>
+        <?php if(session('success')){ ?>
+            <div class="container-fluid alert alert-success d-flex justify-content-center align-content-center" role="alert">
+                <?php echo session('success'); ?>
+            </div>
+        <?php } ?>
         <div class="container-fluid">
             <h4 class="mt-4"><?php echo $titulo;?></h4>
         </div>

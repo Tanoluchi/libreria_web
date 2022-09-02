@@ -1,4 +1,9 @@
 <main class="container-fluid">
+        <?php if(session('success')){ ?>
+            <div class="container-fluid alert alert-success d-flex justify-content-center align-content-center" role="alert">
+                <?php echo session('success'); ?>
+            </div>
+        <?php } ?>
     <div class="pageTitleSection pb-2">
         <h4 class="mt-4"><?php echo $titulo;?></h4>
         <p>

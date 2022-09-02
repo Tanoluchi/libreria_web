@@ -77,6 +77,9 @@ class Productos extends BaseController{
         $producto = $producto->where('id', $id)->set(['activo' => 0]);
         $producto->update();
 
+        $session = session();
+        $session->setFlashdata('success','Se ha eliminado el producto correctamente');
+
         return $this->response->redirect(site_url('panelAdmin/producto/listar'));
     }
     
@@ -84,6 +87,9 @@ class Productos extends BaseController{
         $producto = new Producto();
         $producto = $producto->where('id', $id)->set(['activo' => 1]);
         $producto->update();
+
+        $session = session();
+        $session->setFlashdata('success','Se ha activado el producto correctamente');
 
         return $this->response->redirect(site_url('panelAdmin/producto/listar'));
     }
@@ -94,6 +100,9 @@ class Productos extends BaseController{
         $producto->where('id', $id)->set(['destacado' => 1]);
         $producto->update();
 
+        $session = session();
+        $session->setFlashdata('success','Se ha destacado el producto correctamente');
+
         return $this->response->redirect(site_url('panelAdmin/producto/listar'));
     }
 
@@ -102,6 +111,9 @@ class Productos extends BaseController{
 
         $producto->where('id', $id)->set(['destacado' => 0]);
         $producto->update();
+
+        $session = session();
+        $session->setFlashdata('success','Se ha quitado el destacado correctamente');
 
         return $this->response->redirect(site_url('panelAdmin/producto/listar'));
     }
@@ -175,10 +187,13 @@ class Productos extends BaseController{
         if($this->validate($this->reglasModificar)){
             $productos->update($id, $data);
 
+            $session = session();
+            $session->setFlashdata('success','Se ha modificado el producto correctamente');
+
             return $this->response->redirect(site_url('panelAdmin/producto/listar'));
         }else{
             $session = session();
-            $session->setFlashdata('mensaje','Revise la informacion');
+            $session->setFlashdata('error','Revise la informacion ingresada');
 
             return redirect()->back()->withInput();
         }

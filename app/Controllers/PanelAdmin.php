@@ -156,18 +156,17 @@ class PanelAdmin extends BaseController{
                 'precio' => $this->request->getPost('precio'),
                 'stock' => $this->request->getPost('stock'),
                 'imagen' => $imagen
-            ]);  
+            ]);
+
+            $session = session();
+            $session->setFlashdata('success','Se ha agregado el producto correctamente');
 
             return redirect()->to(site_url('panelAdmin/producto/listar'));
         }else {
-            $data['titulo'] = 'Agregar Producto';
+            $session = session();
+            $session->setFlashdata('error','Revise la informacion ingresada');
 
-            $categorias = $this->categorias->where('activo', 1)->findAll();
-            $data['categorias'] = $categorias;
-
-            echo view('back/panelAdmin/header', $data);
-            echo view('back/panelAdmin/producto/agregar', $data);//vista del formulario
-            echo view('back/panelAdmin/footer');
+            return redirect()->back()->withInput();
         }
     }
 }

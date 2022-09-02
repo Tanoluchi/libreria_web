@@ -75,6 +75,15 @@ ul > li {
     align-items: center;
 }
 
+.registerPage{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 89px;
+    background-color: rgb(229, 229, 229);
+    align-items: center;
+}
+
 .contactPage{
     width: 100%;
     display: flex;

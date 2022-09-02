@@ -7,7 +7,7 @@ $id = $user_session->id;
 $validation = \Config\Services::validation(); ?>
 
 <?php if(session('error')){ ?>
-    <div class="container-fluid alert alert-success d-flex justify-content-center align-content-center" role="alert">
+    <div class="container-fluid alert alert-danger d-flex justify-content-center align-content-center" role="alert">
         <?php echo session('error'); ?>
     </div>
 <?php } ?>

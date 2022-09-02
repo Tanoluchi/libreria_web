@@ -57,6 +57,10 @@ $routes->get('panelAdmin/producto/destacados', 'PanelAdmin::listarDestacados');
 $routes->get('panelAdmin/producto/eliminados', 'PanelAdmin::listarEliminados');
 $routes->get('panelAdmin/producto/agregar', 'PanelAdmin::agregar');
 $routes->post('panelAdmin/producto/guardar/', 'PanelAdmin::guardar');
+$routes->get('panelAdmin/categoria/listar', 'Categorias::listar');
+$routes->get('panelAdmin/categoria/agregar', 'Categorias::agregar');
+$routes->get('panelAdmin/categoria/eliminados', 'Categorias::eliminados');
+$routes->post('panelAdmin/categoria/guardar', 'Categorias::guardar');
 $routes->get('panelAdmin/contacto/listar', 'Contactos::listarContactos');
 $routes->get('panelAdmin/contacto/resueltos', 'Contactos::listarResueltos');
 $routes->get('panelAdmin/contacto/pendientes', 'Contactos::listarPendientes');
@@ -87,6 +91,10 @@ $routes->post('carrito/actualizar', 'Carrito::actualizar');
 $routes->get('carrito/datos', 'Carrito::datos');
 $routes->post('carrito/confirmar', 'Carrito::confirmar');
 $routes->post('factura/guardar', 'Facturas::guardar');
+$routes->post('categoria/actualizar', 'Categorias::actualizar');
+$routes->get('categoria/modificar/(:num)', 'Categorias::modificar/$1');
+$routes->get('categoria/eliminar/(:num)', 'Categorias::eliminar/$1');
+$routes->get('categoria/activar/(:num)', 'Categorias::activar/$1');
 
 
 

@@ -57,14 +57,17 @@ class Contactos extends BaseController{
                 'nombre' => $this->request->getPost('nombre'),
                 'email' => $this->request->getPost('email'),
                 'mensaje' => $this->request->getPost('mensaje'),
-            ]);  
+            ]);
+
+            $session = session();
+            $session->setFlashdata('success','Se ha enviado el mensaje correctamente.');
 
             return redirect()->to(site_url('contacto'));
         }else {
-            $data['titulo'] = 'Contacto';
-            echo view('front/header', $data);
-            echo view('front/contacto');
-            echo view('front/footer');
+            $session = session();
+            $session->setFlashdata('error','Revise la informacion ingresada');
+
+            return redirect()->back()->withInput();
         }
     }
 

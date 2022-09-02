@@ -139,6 +139,14 @@ class Usuarios extends BaseController{
                     'max_length' => 'El campo Telefono debe tener máximo 12 caracteres.'
                 ]
             ],
+            'password' => [
+                'rules' => 'required|min_length[8]|max_length[60]',
+                'errors' => [
+                    'required' => 'El campo Contraseña es obligatorio.',
+                    'min_length' => 'El campo Contraseña debe tener al menos 8 caracteres.',
+                    'max_length' => 'El campo Contraseña debe tener máximo 60 caracteres.'
+                ]
+            ],
         ];
 	}
 
@@ -217,6 +225,9 @@ class Usuarios extends BaseController{
         $usuario->where('id', $id)->set(['activo' => 0]);
         $usuario->update();
 
+        $session = session();
+        $session->setFlashdata('success','El usuario se ha eliminado con exito!');
+
         return $this->response->redirect(site_url('usuarios/listar'));
     }
 
@@ -225,6 +236,9 @@ class Usuarios extends BaseController{
 
         $usuario->where('id', $id)->set(['activo' => 1]);
         $usuario->update();
+
+        $session = session();
+        $session->setFlashdata('success','El usuario se ha activado con exito!');
 
         return $this->response->redirect(site_url('usuarios/listar'));
     }

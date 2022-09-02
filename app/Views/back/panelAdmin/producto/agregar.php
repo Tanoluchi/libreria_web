@@ -2,6 +2,11 @@
 
 <div id="layourSidenav_content">
     <main>
+        <?php if(session('error')){ ?>
+            <div class="container-fluid alert alert-danger d-flex justify-content-center align-content-center" role="alert">
+                <?php echo session('error'); ?>
+            </div>
+        <?php } ?>
         <div class="container-fluid">
             <h4 class="mt-4"><?php echo $titulo;?></h4>
         </div>
